@@ -1,0 +1,8 @@
+[33mbee226e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Correction des chemins des assets et mise à jour des dépendances
+[33m0c871d4[m Configuration pour garder main.jsx dans le build
+[33md4b8e49[m Correction des chemins pour le build
+[33m95e1e4f[m Correction des chemins pour le build
+[33ma416464[m Optimisation du fichier index.html pour le build
+[33m02cf903[m Ajout des configurations pour le déploiement
+[33m09569f0[m Ajout du projet complet
+[33mb5d8cfd[m first commit
