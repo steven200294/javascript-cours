@@ -19,9 +19,14 @@ jobs:
           node-version: '18'
           cache: 'npm'
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm cache clean --force
+          rm -rf node_modules package-lock.json
+          npm install
       - name: Build
         run: npm run build
+        env:
+          NODE_ENV: production
 
   deploy:
     needs: build
@@ -30,6 +35,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v3
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2 
